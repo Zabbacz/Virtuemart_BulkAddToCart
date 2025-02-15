@@ -1,0 +1,79 @@
+.container{
+         display : inline-block;
+ }
+
+fieldset {
+background-color:#F5F5F5;
+}
+p.chyba {
+ color: red;
+ font-size: 16px;
+ font-weight: bold;
+}
+input.inputtable {
+  display: inline-flex;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 2px solid black;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+input.tlacitko {
+   background-color: #ce7b2c;
+  border: 0;
+  border-bottom: 2px solid currentcolor; 
+    color: white;
+  padding: .65em;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input.tlacitko:hover {opacity: 1}
+
+input.mazaci_tlacitko {
+	background-color: #ff0000;
+   border: 0;
+  border-bottom: 2px solid currentcolor; 
+  color: white;
+  padding: .65em;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input.mazaci_tlacitko:hover {opacity: 1}
+
+input.kontrolni_tlacitko {
+	background-color: blue;
+   border: 0;
+  border-bottom: 2px solid currentcolor; 
+  color: white;
+  padding: .65em;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input.kontrolni_tlacitko:hover {opacity: 1}

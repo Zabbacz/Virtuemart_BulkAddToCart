@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" client="site" method="upgrade">
+    <name>ZBulkAddToCart</name>
+    <creationDate>2025-01-25</creationDate>
+    <author>zabba</author>
+    <authorEmail>zabba@quick.cz</authorEmail>
+    <authorUrl>[AUTHOR_URL]</authorUrl>
+    <copyright>[COPYRIGHT]</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <version>2.0</version>
+    <description>Hromadné vkládaní do košíku</description>
+     <namespace path="src">Zabba\Module\ZBulkAddToCart</namespace>
+    <files>
+        <folder module="mod_virtuemart_zbulkaddtocart">services</folder>
+        <folder>src</folder>
+        <folder>tmpl</folder>
+        <folder>language</folder>
+        <folder>media</folder> 
+    </files>
+    <media destination="mod_virtuemartzbulkaddtocart" folder="media">
+        <filename>joomla.asset.json</filename>
+        <folder>css</folder>
+    </media>
+    <languages>
+      <language tag="en-GB">language/en-GB/mod_virtuemart_zbulkaddtocart.ini</language>
+      <language tag="cs-CZ">language/cs-CZ/mod_virtuemart_zbulkaddtocart.ini</language>
+  </languages>
+</extension>
+

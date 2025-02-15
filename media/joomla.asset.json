@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
+  "name": "mod_virtuemart_zbulkaddtocart",
+  "version": "1.0.0",
+  "description": "Hromadne pridavani do kosiku",
+  "license": "GPL-2.0-or-later",
+  "assets": [
+    {
+      "name": "mod_virtuemart_zbulkaddtocart.style",
+      "type": "style",
+      "uri": "mod_virtuemartzbulkaddtocart/styl.css",
+      "version": "1.0.0",
+      "attributes": {
+        "type": "module"
+      },
+      "version": "1.0.0"
+    } 
+  ]
+}

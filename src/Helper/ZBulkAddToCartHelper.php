@@ -50,8 +50,8 @@ class ZBulkAddToCartHelper
         {
             while($o<16)
             {
-                $sku = $input->get('id'.$o);
-                $qty = $input->get('pocet'.$o);
+                $sku  = $input->get('id'.$o, '', 'STRING');
+                $qty = $input->get('pocet'.$o,0,'INT');
                 //validate sku
                 if (!empty($sku) && !empty($qty)) 
                 {
@@ -59,7 +59,8 @@ class ZBulkAddToCartHelper
                     $query = $db->getQuery(true)
                         ->select ($db->quoteName('virtuemart_product_id'))
                         ->from ($db->quoteName('#__virtuemart_products'))
-                        ->where ($db->quoteName('product_sku'). ' = \''.$db->escape($sku).'\''); 
+                        ->where ($db->quoteName('product_sku'). ' LIKE '.$db->quote($sku)); 
+//                        ->where ($db->quoteName('product_sku'). ' LIKE '.$db->escape($sku)); 
                     $db->setQuery($query); 
                     $virtuemart_product_id = (int)$db->loadResult();
                     if (empty($virtuemart_product_id))
@@ -68,7 +69,7 @@ class ZBulkAddToCartHelper
                         $query = $db->getQuery(true)
                             ->select ($db->quoteName('virtuemart_product_id'))
                             ->from ($db->quoteName('#__virtuemart_products'))
-                            ->where ($db->quoteName('product_gtin'). ' = \''.$db->escape($sku).'\'');
+                            ->where ($db->quoteName('product_gtin'). ' = '.$db->quote($sku));
                         $db->setQuery($query); 
                         $virtuemart_product_id = (int)$db->loadResult(); 
                     }

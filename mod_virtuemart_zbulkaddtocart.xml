@@ -18,7 +18,7 @@
         <folder>media</folder> 
         <filename>helper.php</filename>        
     </files>
-    <media destination="mod_virtuemartzbulkaddtocart" folder="media">
+    <media destination="mod_virtuemart_zbulkaddtocart" folder="media">
         <filename>joomla.asset.json</filename>
         <folder>css</folder>
         <folder>js</folder>

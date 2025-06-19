@@ -5,7 +5,7 @@ namespace Zabba\Module\ZBulkAddToCart\Site\Helper;
 
 use Joomla\CMS\Factory;
 use Joomla\CMS\Language\Text;
-use Joomla\CMS\Filesystem\File;
+//use Joomla\CMS\Filesystem\File;
 use Joomla\Database\DatabaseInterface;
 use Joomla\Registry\Registry;
 use Joomla\CMS\Router\Route;

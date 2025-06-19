@@ -16,10 +16,12 @@
         <folder>tmpl</folder>
         <folder>language</folder>
         <folder>media</folder> 
+        <filename>helper.php</filename>        
     </files>
     <media destination="mod_virtuemartzbulkaddtocart" folder="media">
         <filename>joomla.asset.json</filename>
         <folder>css</folder>
+        <folder>js</folder>
     </media>
     <languages>
       <language tag="en-GB">language/en-GB/mod_virtuemart_zbulkaddtocart.ini</language>

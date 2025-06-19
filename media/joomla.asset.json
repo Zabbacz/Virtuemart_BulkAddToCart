@@ -6,13 +6,22 @@
   "license": "GPL-2.0-or-later",
   "assets": [
     {
-      "name": "mod_virtuemart_zbulkaddtocart.style",
-      "type": "style",
-      "uri": "mod_virtuemartzbulkaddtocart/styl.css",
-      "version": "1.0.0",
+      "name": "mod_virtuemart_zbulkaddtocart.bulk_search",
+      "type": "script",
+      "uri": "mod_virtuemart_zbulkaddtocart/bulk_search.js",
+      "dependencies": [
+        "core",
+        "messages"
+      ],
       "attributes": {
         "type": "module"
       },
+      "version": "1.1.0"
+    },
+     {
+      "name": "mod_virtuemart_zbulkaddtocart.style",
+      "type": "style",
+      "uri": "mod_virtuemart_zbulkaddtocart/styl.css",
       "version": "1.0.0"
     } 
   ]
